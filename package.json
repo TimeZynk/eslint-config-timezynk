@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config-timezynk",
+  "version": "1.0.0",
+  "description": "The eslint configuration used in TimeZynk JavaScript and TypeScript projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "TimeZynk",
+  "license": "MIT"
+}
