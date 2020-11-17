@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-timezynk",
+  "name": "eslint-config-timezynk-typescript",
   "version": "1.0.0",
   "description": "The eslint configuration used in TimeZynk JavaScript and TypeScript projects.",
   "main": "index.js",
@@ -7,17 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "eslint"
+    "eslint",
+    "typescript"
   ],
   "author": "TimeZynk",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 6.8",
-    "eslint-plugin-prettier": "3.1.4",
-    "prettier": "2.1.2",
-    "import": ">= 0.1"
-  },
-  "dependencies": {
-    "prettier": "^2.1.2"
+    "@typescript-eslint/eslint-plugin": ">=4",
+    "@typescript-eslint/parser": "^4.8.1"
   }
 }
+
