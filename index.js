@@ -1,7 +1,9 @@
 module.exports = {
 
     extends: [
-        "eslint:recommended"
+        "eslint:recommended",
+       require.resolve('./rules/import'),
+            require.resolve('./rules/prettier')
     ],
     plugins: [
         'import',

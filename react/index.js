@@ -1,6 +1,7 @@
 module.exports = {
-    "extends": "../typeScript/index.js",
-    // https://eslint.info/
+    "extends": ["../typeScript/index.js",
+        require.resolve('./rules/jsx-a11y')
+    ],
     env: {
         browser: true,
         commonjs: true
@@ -17,6 +18,7 @@ module.exports = {
         'react/jsx-curly-newline': 1,
         'react/jsx-curly-spacing': 1,
         'react/jsx-equals-spacing': 1,
+        'react/jsx-filename-extension':1,
         'react/jsx-first-prop-new-line': 1,
         'react/jsx-fragments': [1, 'element'],
         'react/jsx-key': 1,
@@ -51,6 +53,25 @@ module.exports = {
         'react/style-prop-object': 1,
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
-
+        'react/jsx-no-duplicate-props':1,
+        'react/jsx-pascal-case':1,
+        'react/jsx-uses-react':1,
+        'react/jsx-uses-vars':1,
+        'react/no-danger':1,
+        'react/no-deprecated':1,
+        'react/no-did-update-set-state':1,
+        'react/no-will-update-set-state':1,
+        'react/no-unknown-property':1,
+        'react/react-in-jsx-scope':1,
+        'react/require-render-return':1,
+        'react/jsx-no-comment-textnodes':1,
+        'react/no-render-return-value':1,
+        'react/no-danger-with-children':1,
+        'react/no-children-prop':1,
+        'react/forbid-foreign-prop-types':1,
+        'react/void-dom-elements-no-children':1,
+        'react/no-typos':1,
+        'react/jsx-curly-brace-presence':1,
+        'react/jsx-props-no-multi-spaces':1,
     }
 }
