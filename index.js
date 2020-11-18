@@ -2,8 +2,8 @@ module.exports = {
 
     extends: [
         "eslint:recommended",
-       require.resolve('./rules/import'),
-            require.resolve('./rules/prettier')
+        require.resolve('./rules/import'),
+        require.resolve('./rules/prettier')
     ],
     plugins: [
         'import',
@@ -17,7 +17,7 @@ module.exports = {
         es6: true,
     },
     rules: {
-            'array-bracket-spacing': 1,
+            'array-bracket-spacing':[ 1,'never'],
             'array-callback-return': 1,
             'arrow-body-style': 0,
             'arrow-parens': [1, 'always'],
@@ -153,9 +153,9 @@ module.exports = {
             'template-tag-spacing':1,
             'unicode-bom':1,
             'no-buffer-constructor':1,
-            'no-new-require':1,
-            'no-path-concat':1,
-            'no-await-in-loop':1,
+            'no-new-require':2,
+            'no-path-concat':2,
+            'no-await-in-loop':2,
             'no-console':1,
             'no-template-curly-in-string':1,
             'dot-location':1,
@@ -167,9 +167,9 @@ module.exports = {
             'no-extra-bind':1,
             'no-extra-label':1,
             'no-floating-decimal':1,
-            'no-implied-eval':1,
-            'no-iterator':1,
-            'no-labels':1,
+            'no-implied-eval':2,
+            'no-iterator':2,
+            'no-labels':2,
             'no-lone-blocks':1,
             'no-multi-str':1,
             'no-new':1,
@@ -177,11 +177,11 @@ module.exports = {
             'no-new-wrappers':1,
             'no-octal-escape':1,
             'no-proto':1,
-            'no-restricted-properties':1,
-            'no-return-await':1,
-            'no-script-url':1,
-            'no-self-compare':1,
-            'no-void':1
+            'no-restricted-properties':2,
+            'no-return-await':2,
+            'no-script-url':2,
+            'no-self-compare':2,
+            'no-void':2
 
         }
 }
