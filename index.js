@@ -45,9 +45,10 @@ module.exports = {
             'global-require': 0,
             'guard-for-in': 1,
 
-            'jsx-quotes': 1,
+            'jsx-quotes': [ 1, 'prefer-double' ],
 
-            'key-spacing': 1,
+            'key-spacing': [ 1, { beforeColon: false, afterColon: true } ],
+
             'keyword-spacing': 1,
 
             'lines-between-class-members': 1,
@@ -170,13 +171,13 @@ module.exports = {
             'no-implied-eval':2,
             'no-iterator':2,
             'no-labels':2,
-            'no-lone-blocks':1,
-            'no-multi-str':1,
-            'no-new':1,
-            'no-new-func':1,
-            'no-new-wrappers':1,
-            'no-octal-escape':1,
-            'no-proto':1,
+            'no-lone-blocks':2,
+            'no-multi-str':2,
+            'no-new':2,
+            'no-new-func':2,
+            'no-new-wrappers':2,
+            'no-octal-escape':2,
+            'no-proto':2,
             'no-restricted-properties':2,
             'no-return-await':2,
             'no-script-url':2,

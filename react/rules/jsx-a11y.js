@@ -34,7 +34,7 @@ module.exports = {
         'jsx-a11y/media-has-caption ':1,
         'jsx-a11y/no-interactive-element-to-noninteractive-role':1,
         'jsx-a11y/no-noninteractive-element-to-interactive-role':1,
-        'jsx-a11y/no-noninteractive-tabindex':1,
+        'jsx-a11y/no-noninteractive-tabindex': [ 2 , { tags: [], roles: [ 'tabpanel' ] } ],
         'jsx-a11y/heading-has-content':1,
         'jsx-a11y/aria-activedescendant-has-tabindex':1,
         'jsx-a11y/media-has-caption':1
