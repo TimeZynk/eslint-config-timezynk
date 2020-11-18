@@ -14,6 +14,15 @@ module.exports = {
                 'import/no-unresolved': 0,
                 'import/no-useless-path-segments': 1,
                 'import/order': 1,
-                'import/prefer-default-export': 0
+                'import/prefer-default-export': 0,
+                'import/named':1,
+                'import/export':1,
+                'import/no-named-as-default-member':1,
+                'import/no-amd':1,
+                'import/no-absolute-path':1,
+                'import/no-dynamic-require':1,
+                'import/no-webpack-loader-syntax':1,
+                'import/no-self-import':1
+              
             }
 }
