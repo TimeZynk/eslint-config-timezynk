@@ -16,6 +16,24 @@ module.exports = {
         amd: true,
         es6: true,
     },
+    settings:{
+        'import/ignore': [ 'node_modules', '\\.(coffee|scss|css|less|hbs|svg|json)$' ],
+        'import/core-modules': [],
+        'import/extensions': [ '.js', '.mjs', '.jsx' ],
+        'import/resolver':{ node: { extensions: [ '.js', '.jsx', '.ts', '.tsx' ] } },
+        'propWrapperFunctions': [ 'forbidExtraProps', 'exact', 'Object.freeze' ],
+
+    },
+    parserOptions:{
+        ecmaVersion: 2018,
+        sourceType:'module',
+        ecmaFeatures: {
+            jsx: true,
+            generators: false,
+            objectLiteralDuplicateProperties: false
+          }
+
+    },
     rules: {
             'array-bracket-spacing':[ 1,'never'],
             'array-callback-return': 1,

@@ -6,6 +6,7 @@ module.exports = {
         browser: true,
         commonjs: true
     },
+    settings:{react: { version: 'detect', pragma: 'React' }},
     plugins: ['react', 'react-hooks', 'jsx-a11y'],
     rules: {
         'react/button-has-type': 1,
