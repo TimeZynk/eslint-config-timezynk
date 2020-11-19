@@ -15,14 +15,14 @@ module.exports = {
                 'import/no-useless-path-segments': 1,
                 'import/order': 1,
                 'import/prefer-default-export': 0,
-                'import/named':1,
-                'import/export':1,
-                'import/no-named-as-default-member':1,
-                'import/no-amd':1,
-                'import/no-absolute-path':1,
-                'import/no-dynamic-require':1,
-                'import/no-webpack-loader-syntax':1,
-                'import/no-self-import':1
-              
+                'import/named':2,
+                'import/export':2,
+                'import/no-named-as-default-member':2,
+                'import/no-amd':2,
+                'import/no-absolute-path':2,
+                'import/no-dynamic-require':2,
+                'import/no-webpack-loader-syntax':2,
+                'import/no-self-import':2
+
             }
 }
