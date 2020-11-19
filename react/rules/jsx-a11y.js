@@ -1,15 +1,61 @@
 module.exports = {
     rules:{
-        'jsx-a11y/alt-text': 1,
-        'jsx-a11y/anchor-has-content': 1,
-        'jsx-a11y/anchor-is-valid': 1,
+        'jsx-a11y/alt-text': [1, {
+            elements: [ 'img', 'object', 'area', 'input[type="image"]' ],
+            img: [],
+            object: [],
+            area: [],
+            'input[type="image"]': []
+        }
+        ],
+        'jsx-a11y/anchor-has-content': [1,{ components: [] }],
+        'jsx-a11y/anchor-is-valid': [1,{
+            components: [ 'Link' ],
+            specialLink: [ 'to' ],
+            aspects: [ 'noHref', 'invalidHref', 'preferButton' ]
+        }],
         'jsx-a11y/click-events-have-key-events': 1,
         'jsx-a11y/href-no-hash': 0,
         'jsx-a11y/html-has-lang': 1,
-        'jsx-a11y/control-has-associated-label': 1,
-        'jsx-a11y/label-has-associated-control': 1,
+        'jsx-a11y/control-has-associated-label': [1, {
+            labelAttributes: [ 'label' ],
+            controlComponents: [],
+            ignoreElements: [
+                'audio',    'canvas',
+                'embed',    'input',
+                'textarea', 'tr',
+                'video'
+            ],
+            ignoreRoles: [
+                'grid',       'listbox',
+                'menu',       'menubar',
+                'radiogroup', 'row',
+                'tablist',    'toolbar',
+                'tree',       'treegrid'
+            ],
+            depth: 5
+        }
+        ],
+        'jsx-a11y/label-has-associated-control': [1,  {
+            labelComponents: [],
+            labelAttributes: [],
+            controlComponents: [],
+            assert: 'both',
+            depth: 25
+        }
+        ],
         'jsx-a11y/label-has-for': 0,
-        'jsx-a11y/no-noninteractive-element-interactions': 1,
+        'jsx-a11y/no-noninteractive-element-interactions': [1, {
+            handlers: [
+                'onClick',
+                'onMouseDown',
+                'onMouseUp',
+                'onKeyPress',
+                'onKeyDown',
+                'onKeyUp'
+            ]
+        }
+        ],
         'jsx-a11y/no-static-element-interactions': 0,
         'jsx-a11y/tabindex-no-positive': 1,
         'jsx-a11y/aria-role':2,
