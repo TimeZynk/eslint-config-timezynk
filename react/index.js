@@ -12,7 +12,7 @@ module.exports = {
     plugins: ['react',  'react-hooks', 'jsx-a11y'],
     rules: {
         'react/button-has-type': [1,{ button: true, submit: true, reset: false }],
-        'react/default-props-match-prop-types': 1,
+        'react/default-props-match-prop-types': [1],
         'react/destructuring-assignment': 0,
         'react/forbid-prop-types': 1,
         'react/no-access-state-in-setstate': 1,

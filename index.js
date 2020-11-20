@@ -147,37 +147,44 @@ module.exports = {
         'no-var': 1,
         'no-whitespace-before-property': 1,
         'object-curly-newline': 'off',
-        'object-curly-spacing': 1,
-        'object-property-newline': 1,
-        'object-shorthand': 1,
-        'one-var': 1,
-        'one-var-declaration-per-line': 1,
-        'operator-assignment': 1,
+        'object-curly-spacing': [1, 'always'],
+        'object-property-newline': [1, {
+            allowAllPropertiesOnSameLine: true,
+            allowMultiplePropertiesPerLine: false
+        }],
+        'object-shorthand': [1, 'always', { ignoreConstructors: false, avoidQuotes: true }],
+        'one-var': [1, 'never'],
+        'one-var-declaration-per-line': [1, 'always'],
+        'operator-assignment': [1, 'always'],
         'operator-linebreak': 0,
-
-        'padded-blocks': 1,
-        'prefer-arrow-callback': 1,
-        'prefer-const': 1,
-        'prefer-destructuring': 1,
+        'padded-blocks': [1, { blocks: 'never', classes: 'never', switches: 'never' },
+            { allowSingleLineBlocks: true }],
+        'prefer-arrow-callback': [1, { allowNamedFunctions: true, allowUnboundThis: true } ],
+        'prefer-const':[ 1,  { destructuring: 'any', ignoreReadBeforeAssign: true }],
+        'prefer-destructuring': [1, {
+            VariableDeclarator: { array: false, object: true },
+            AssignmentExpression: { array: true, object: false }
+        },
+            { enforceForRenamedProperties: false }],
         'prefer-object-spread': 1,
-        'prefer-promise-reject-errors': 1,
+        'prefer-promise-reject-errors': [1, { allowEmptyReject: true } ],
         'prefer-rest-params': 1,
         'prefer-spread': 1,
         'prefer-template': 1,
-
-        'quote-props': 1,
-        quotes: 1,
-
+        'quote-props': [1, 'as-needed',
+            { keywords: false, unnecessary: true, numbers: false }
+        ],
+        quotes: [1, 'single', {avoidEscape:true}],
         radix: 1,
         semi: 1,
         'semi-spacing': 1,
         'space-before-blocks': 1,
         'space-before-function-paren': 1,
-        'space-in-parens': 1,
+        'space-in-parens': [1,'never'],
         'space-infix-ops': 1,
-        'space-unary-ops': 1,
+        'space-unary-ops': [1,  { words: true, nonwords: false, overrides: {} } ],
         'spaced-comment': 1,
-        strict: 1,
+        strict: [1, 'never'],
         'switch-colon-spacing': 0,
         'vars-on-top': 1,
         'wrap-iife': 0,
@@ -317,11 +324,9 @@ module.exports = {
                 message: 'Use the exponentiation operator (**) instead.'
             }
         ],
-
         'no-return-await': 2,
         'no-script-url': 2,
         'no-self-compare': 2,
         'no-void': 2
-
     }
 }
