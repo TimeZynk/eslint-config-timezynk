@@ -24,14 +24,19 @@ module.exports = {
         'react/jsx-no-undef': 1,
         'react/jsx-one-expression-per-line': 0,
         'react/jsx-props-no-spreading': [1, { html: 'enforce', custom: 'enforce', exceptions: [] } ],
-        'react/jsx-tag-spacing': 1,
+        'react/jsx-tag-spacing': [1,{
+            closingSlash: 'never',
+            beforeSelfClosing: 'always',
+            afterOpening: 'never',
+            beforeClosing: 'never'
+        }],
         'react/jsx-wrap-multilines': 'off',
         'react/jsx-no-duplicate-props': [2, {ignoreCase:true}],
         'react/jsx-pascal-case':[2, { allowAllCaps: true, ignore: [] } ],
         'react/jsx-uses-react':2,
         'react/jsx-uses-vars':2,
         'react/jsx-no-comment-textnodes':2,
-        'react/jsx-curly-brace-presence':2,
+        'react/jsx-curly-brace-presence':[2, { props: 'never', children: 'never' }],
         'react/jsx-props-no-multi-spaces':2,
 
     }

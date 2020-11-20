@@ -58,7 +58,7 @@ module.exports = {
         ],
         'jsx-a11y/no-static-element-interactions': 0,
         'jsx-a11y/tabindex-no-positive': 1,
-        'jsx-a11y/aria-role':2,
+        'jsx-a11y/aria-role':[2,{ ignoreNonDOM: false} ],
         'jsx-a11y/aria-props':2,
         'jsx-a11y/aria-proptypes':2,
         'jsx-a11y/aria-unsupported-elements':2,
