@@ -51,19 +51,29 @@ module.exports = {
         'consistent-return': 1,
         curly: [1, 'multi-line'],
         'default-case': [1, { commentPattern: '^no default$' }],
-        'dot-notation': ['warn', {allowPattern: '^[a-z]+(_[a-z]+)+$'}],
+        'dot-notation': [1, {allowPattern: '^[a-z]+(_[a-z]+)+$'}],
         'eol-last': [1, 'always'],
         'func-call-spacing': [1, 'never'],
         'func-names': 1,
-        'function-paren-newline': 0,
+        'function-paren-newline': 1,
         'global-require': 0,
         'guard-for-in': 1,
         'jsx-quotes': [1, 'prefer-double'],
         'key-spacing': [1, {beforeColon: false, afterColon: true}],
-        'keyword-spacing': [1, {
-            before: true,
-            after: true,
-            overrides: { return: {}, throw: {}, case: {} }
+        'keyword-spacing': [1,     {
+            "before": true,
+            "after": true,
+            "overrides": {
+                "return": {
+                    "after": true
+                },
+                "throw": {
+                    "after": true
+                },
+                "case": {
+                    "after": true
+                }
+            }
         }],
         'lines-between-class-members': [1, 'always',{ exceptAfterSingleLine: false } ],
         'max-len': 0,
@@ -77,7 +87,7 @@ module.exports = {
         }
         ],
         'new-parens': 1,
-        'newline-per-chained-call': 0,
+        'newline-per-chained-call': 1,
         'no-bitwise': 1,
         'no-cond-assign': [1, 'always'],
         'no-confusing-arrow': [1, { allowParens: true }],
@@ -86,7 +96,52 @@ module.exports = {
         'no-extra-semi': 1,
         'no-lonely-if': 1,
         'no-loop-func': 1,
-        'no-mixed-operators': [1, { allowSamePrecedence:false}],
+        'no-mixed-operators': [1,   {
+            "groups": [
+                [
+                    "%",
+                    "**"
+                ],
+                [
+                    "%",
+                    "+"
+                ],
+                [
+                    "%",
+                    "-"
+                ],
+                [
+                    "%",
+                    "*"
+                ],
+                [
+                    "%",
+                    "/"
+                ],
+                [
+                    "/",
+                    "*"
+                ],
+                [
+                    "&",
+                    "|",
+                    "<<",
+                    ">>",
+                    ">>>"
+                ],
+                [
+                    "==",
+                    "!=",
+                    "===",
+                    "!=="
+                ],
+                [
+                    "&&",
+                    "||"
+                ]
+            ],
+            "allowSamePrecedence": false
+        }],
         'no-mixed-spaces-and-tabs': 1,
         'no-multi-assign': 1,
         'no-multi-spaces': [1, { ignoreEOLComments: false } ],
@@ -187,11 +242,37 @@ module.exports = {
         'space-in-parens': [1,'never'],
         'space-infix-ops': 1,
         'space-unary-ops': [1,  { words: true, nonwords: false, overrides: {} } ],
-        'spaced-comment':[ 1],
+        'spaced-comment':[ 1, 'always', {
+            "line": {
+                "exceptions": [
+                    "-",
+                    "+"
+                ],
+                "markers": [
+                    "=",
+                    "!"
+                ]
+            },
+            "block": {
+                "exceptions": [
+                    "-",
+                    "+"
+                ],
+                "markers": [
+                    "=",
+                    "!",
+                    ":",
+                    "::"
+                ],
+                "balanced": true,
+            }
+        }
+        ],
         strict: [1, 'never'],
         'switch-colon-spacing': 0,
         'vars-on-top': 1,
-        'wrap-iife': 0,
+        'valid-typeof':[ 2 , { requireStringLiterals: true } ],
+        'wrap-iife': 1,
         'yoda': 1,
         'arrow-spacing': [2, {before: true, after: true}],
         'generator-star-spacing': [2, {before: false, after: true}],

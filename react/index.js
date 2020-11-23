@@ -36,7 +36,54 @@ module.exports = {
         'react/prop-types': 0,
         'react/require-default-props': 0,
         'react/self-closing-comp': 1,
-        'react/sort-comp': [1],
+        'react/sort-comp': [1,  {
+            "order": [
+                "static-variables",
+                "static-methods",
+                "instance-variables",
+                "lifecycle",
+                "/^on.+$/",
+                "getters",
+                "setters",
+                "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+                "instance-methods",
+                "everything-else",
+                "rendering"
+            ],
+            "groups": {
+                "lifecycle": [
+                    "displayName",
+                    "propTypes",
+                    "contextTypes",
+                    "childContextTypes",
+                    "mixins",
+                    "statics",
+                    "defaultProps",
+                    "constructor",
+                    "getDefaultProps",
+                    "getInitialState",
+                    "state",
+                    "getChildContext",
+                    "getDerivedStateFromProps",
+                    "componentWillMount",
+                    "UNSAFE_componentWillMount",
+                    "componentDidMount",
+                    "componentWillReceiveProps",
+                    "UNSAFE_componentWillReceiveProps",
+                    "shouldComponentUpdate",
+                    "componentWillUpdate",
+                    "UNSAFE_componentWillUpdate",
+                    "getSnapshotBeforeUpdate",
+                    "componentDidUpdate",
+                    "componentDidCatch",
+                    "componentWillUnmount"
+                ],
+                "rendering": [
+                    "/^render.+$/",
+                    "render"
+                ]
+            }
+        }],
         'react/state-in-constructor': 0,
         'react/static-property-placement': [1, 'property assignment'],
         'react/style-prop-object': 1,
