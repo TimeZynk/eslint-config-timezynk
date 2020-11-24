@@ -68,16 +68,14 @@ module.exports = {
         'jsx-a11y/interactive-supports-focus':2,
         'jsx-a11y/role-has-required-aria-props':2,
         'jsx-a11y/role-supports-aria-props':2,
-        'jsx-a11y/heading-has-content ':[2, { components: [ '' ] }],
+        'jsx-a11y/heading-has-content':[2, { components: [ '' ] }],
         'jsx-a11y/lang':2,
         'jsx-a11y/no-distracting-elements':[2, { elements: [ 'marquee', 'blink' ] }],
         'jsx-a11y/scope':2,
         'jsx-a11y/accessible-emoji':2,
-        'jsx-a11y/aria-activedescendant-has-tabindex ':2,
         'jsx-a11y/iframe-has-title':2,
         'jsx-a11y/no-autofocus':[ 2, { ignoreNonDOM: true }],
         'jsx-a11y/no-redundant-roles':2,
-        'jsx-a11y/media-has-caption ':2,
         'jsx-a11y/no-interactive-element-to-noninteractive-role':[2, { tr: [ 'none', 'presentation' ] }],
         'jsx-a11y/no-noninteractive-element-to-interactive-role':[2, {
             ul: [
@@ -104,7 +102,6 @@ module.exports = {
         }
         ],
         'jsx-a11y/no-noninteractive-tabindex': [ 2 , { tags: [], roles: [ 'tabpanel' ] } ],
-        'jsx-a11y/heading-has-content':[2, { components: [ '' ] }],
         'jsx-a11y/aria-activedescendant-has-tabindex':2,
         'jsx-a11y/media-has-caption':[2,{ audio: [], video: [], track: [] } ]
     }
