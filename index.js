@@ -342,6 +342,8 @@ module.exports = {
         'dot-location': [2, 'property'],
         'eqeqeq': [2, 'always', {null: 'ignore'}],
         'no-alert': 1,
+        'no-array-constructor': 2,
+        'no-empty-function': 2,
         'no-caller': 2,
         'no-eval': 2,
         'no-extend-native': 2,
