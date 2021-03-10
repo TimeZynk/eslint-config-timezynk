@@ -1,8 +1,6 @@
 module.exports = {
-    rules:{
-
+    rules: {
         'react-hooks/rules-of-hooks': 2,
-        'react-hooks/exhaustive-deps': 1
-        
-    }
-}
+        'react-hooks/exhaustive-deps': 1,
+    },
+};
