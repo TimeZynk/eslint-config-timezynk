@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-timezynk",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "The eslint configuration used in TimeZynk JavaScript and TypeScript projects.",
     "homepage": "https://github.com/TimeZynk/eslint-config-timezynk",
     "main": "index.js",
