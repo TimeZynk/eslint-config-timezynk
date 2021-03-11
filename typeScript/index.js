@@ -8,7 +8,7 @@ module.exports = {
         '@typescript-eslint/ban-types': 2,
         '@typescript-eslint/explicit-module-boundary-types': 1,
         '@typescript-eslint/no-array-constructor': 2,
-        '@typescript-eslint/no-empty-function': 2,
+        '@typescript-eslint/no-empty-function': 1,
         '@typescript-eslint/no-empty-interface': 2,
         '@typescript-eslint/no-explicit-any': 1,
         '@typescript-eslint/no-extra-non-null-assertion': 2,
