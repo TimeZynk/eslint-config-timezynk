@@ -6,7 +6,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "format": "prettier --write index.js react rules typeScript package.json",
+        "format": "npx prettier --write index.js react rules typeScript package.json",
         "version": "npm run format && git add -A index.js react rules typeScript package.json",
         "postversion": "git push && git push --tags"
     },
