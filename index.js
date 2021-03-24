@@ -76,7 +76,7 @@ module.exports = {
             },
         ],
         'new-parens': 1,
-        'newline-per-chained-call': 1,
+        'newline-per-chained-call': 0,
         'no-bitwise': 1,
         'no-cond-assign': [1, 'always'],
         'no-confusing-arrow': [1, { allowParens: true }],
