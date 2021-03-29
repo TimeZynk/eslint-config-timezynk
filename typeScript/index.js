@@ -2,6 +2,8 @@ module.exports = {
     extends: ['../index.js'],
     plugins: ['@typescript-eslint/eslint-plugin'],
     rules: {
+        "no-redeclare": "off",
+        "@typescript-eslint/no-redeclare": ["error", {ignoreDeclarationMerge: true}],
         '@typescript-eslint/no-unused-vars': 1,
         '@typescript-eslint/adjacent-overload-signatures': 2,
         '@typescript-eslint/ban-ts-comment': 2,
