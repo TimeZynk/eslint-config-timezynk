@@ -6,7 +6,13 @@ module.exports = {
         '@typescript-eslint/no-redeclare': ['error', { ignoreDeclarationMerge: true }],
         '@typescript-eslint/no-unused-vars': 1,
         '@typescript-eslint/adjacent-overload-signatures': 2,
-        '@typescript-eslint/ban-ts-comment': 2,
+        '@typescript-eslint/ban-ts-comment': [
+            'error',
+            {
+                "ts-ignore": "allow-with-description",
+                minimumDescriptionLength: 10
+            }
+        ],
         '@typescript-eslint/ban-types': 2,
         '@typescript-eslint/explicit-module-boundary-types': 1,
         '@typescript-eslint/no-array-constructor': 2,
