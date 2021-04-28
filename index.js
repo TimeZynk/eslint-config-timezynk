@@ -157,7 +157,7 @@ module.exports = {
         'no-tabs': 1,
         'no-throw-literal': 1,
         'no-trailing-spaces': [1, { skipBlankLines: false, ignoreComments: false }],
-        'no-undef': 1,
+        'no-undef': 2,
         'no-underscore-dangle': 0,
         'no-unneeded-ternary': [1, { defaultAssignment: false }],
         'no-unused-expressions': 0,

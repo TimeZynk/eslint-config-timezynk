@@ -22,7 +22,7 @@ module.exports = {
             },
         ],
         'react/jsx-no-target-blank': [1, { enforceDynamicLinks: 'always' }],
-        'react/jsx-no-undef': 1,
+        'react/jsx-no-undef': 2,
         'react/jsx-one-expression-per-line': 0,
         'react/jsx-props-no-spreading': [1, { html: 'enforce', custom: 'enforce', exceptions: [] }],
         'react/jsx-tag-spacing': [
