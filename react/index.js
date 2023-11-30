@@ -15,6 +15,7 @@ module.exports = {
         TIMEZYNK_VERSION: true,
         TIMEZYNK_VERSION_MAJOR: true,
         STRIPE_PUBLISHABLE_KEY: true,
+        GOOGLE_RECAPTCHA_SITE_KEY: true,
         BUILD_TIME: true,
     },
     settings: { react: { version: 'detect', pragma: 'React' } },
