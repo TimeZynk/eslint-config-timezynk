@@ -1,29 +1,29 @@
-module.exports = {
-    extends: [
-        '../typeScript/index.js',
-        require.resolve('./rules/jsx-a11y'),
-        require.resolve('./rules/jsx'),
-        require.resolve('./rules/hooks'),
-    ],
+export default {
+    extends: ['../typeScript/index.js', './rules/jsx-a11y.js', './rules/jsx.js', './rules/hooks.js'],
     env: {
         browser: true,
-        commonjs: true,
+        node: true, // Add `node: true` if you need Node.js environment settings
     },
     globals: {
-        t: true,
-        TIMEZYNK_REST: true,
-        TIMEZYNK_VERSION: true,
-        TIMEZYNK_VERSION_MAJOR: true,
-        STRIPE_PUBLISHABLE_KEY: true,
-        GOOGLE_RECAPTCHA_SITE_KEY: true,
-        BUILD_TIME: true,
+        t: 'readonly',
+        TIMEZYNK_REST: 'readonly',
+        TIMEZYNK_VERSION: 'readonly',
+        TIMEZYNK_VERSION_MAJOR: 'readonly',
+        STRIPE_PUBLISHABLE_KEY: 'readonly',
+        GOOGLE_RECAPTCHA_SITE_KEY: 'readonly',
+        BUILD_TIME: 'readonly',
     },
-    settings: { react: { version: 'detect', pragma: 'React' } },
+    settings: {
+        react: {
+            version: 'detect',
+            pragma: 'React',
+        },
+    },
     plugins: ['react', 'react-hooks', 'jsx-a11y'],
     rules: {
         'react/button-has-type': [1, { button: true, submit: true, reset: false }],
         'react/default-props-match-prop-types': [1, { allowRequiredDefaults: false }],
-        'react/destructuring-assignment': 0,
+        'react/destructuring-assignment': 'off',
         'react/forbid-prop-types': [
             1,
             {
@@ -37,7 +37,7 @@ module.exports = {
         'react/no-did-mount-set-state': 1,
         'react/no-find-dom-node': 1,
         'react/no-is-mounted': 1,
-        'react/no-multi-comp': 0,
+        'react/no-multi-comp': 'off',
         'react/no-redundant-should-component-update': 1,
         'react/no-string-refs': 1,
         'react/no-this-in-sfc': 1,
@@ -46,8 +46,8 @@ module.exports = {
         'react/no-unused-state': 1,
         'react/prefer-es6-class': [1, 'always'],
         'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
-        'react/prop-types': 0,
-        'react/require-default-props': 0,
+        'react/prop-types': 'off',
+        'react/require-default-props': 'off',
         'react/self-closing-comp': 1,
         'react/sort-comp': [
             1,
@@ -97,7 +97,7 @@ module.exports = {
                 },
             },
         ],
-        'react/state-in-constructor': 0,
+        'react/state-in-constructor': 'off',
         'react/static-property-placement': [1, 'property assignment'],
         'react/style-prop-object': 1,
         'react/no-danger': 1,

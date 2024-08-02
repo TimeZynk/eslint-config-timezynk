@@ -7,7 +7,7 @@ module.exports = {
         '@typescript-eslint/adjacent-overload-signatures': 2,
         '@typescript-eslint/ban-ts-comment': 2,
         '@typescript-eslint/ban-types': 2,
-        '@typescript-eslint/explicit-module-boundary-types': 1,
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-array-constructor': 2,
         '@typescript-eslint/no-empty-function': 1,
         '@typescript-eslint/no-empty-interface': 2,
@@ -28,4 +28,12 @@ module.exports = {
         '@typescript-eslint/prefer-namespace-keyword': 2,
         '@typescript-eslint/triple-slash-reference': 2,
     },
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx"],
+            "rules": {
+                "@typescript-eslint/explicit-module-boundary-types": 1,
+            }
+        }
+    ]
 };

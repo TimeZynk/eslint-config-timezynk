@@ -1,7 +1,8 @@
 {
     "name": "eslint-config-timezynk-react",
-    "version": "1.0.0",
-    "description": "The eslint configuration used in TimeZynk JavaScript and TypeScript projects.",
+    "version": "2.0.0",
+    "type": "module",
+    "description": "The eslint configuration used in Timezynk JavaScript and TypeScript projects.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +11,11 @@
         "eslint",
         "react"
     ],
-    "author": "TimeZynk",
+    "author": "Timezynk",
     "license": "MIT",
     "peerDependencies": {
-        "eslint-plugin-react": ">= 7.21",
-        "eslint-plugin-react-hooks": "4.2.0",
-        "eslint-plugin-jsx-a11y": ">=6.4.1"
+        "eslint-plugin-react": ">= 7.35.0",
+        "eslint-plugin-react-hooks": ">=4.6.2",
+        "eslint-plugin-jsx-a11y": ">=6.9.0"
     }
 }

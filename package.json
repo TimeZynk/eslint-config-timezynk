@@ -1,8 +1,9 @@
 {
     "name": "eslint-config-timezynk",
-    "version": "1.0.11",
-    "description": "The eslint configuration used in TimeZynk JavaScript and TypeScript projects.",
-    "homepage": "https://github.com/TimeZynk/eslint-config-timezynk",
+    "version": "2.0.0",
+    "type": "module",
+    "description": "The eslint configuration used in Timezynk JavaScript and TypeScript projects.",
+    "homepage": "https://github.com/Timezynk/eslint-config-timezynk",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,15 +18,15 @@
     "author": "Timezynk",
     "license": "MIT",
     "peerDependencies": {
-        "@typescript-eslint/eslint-plugin": "^4.17.0",
-        "@typescript-eslint/parser": "^4.17.0",
-        "babel-eslint": ">=10.1.0",
-        "eslint": ">=7.7",
-        "eslint-plugin-prettier": "^3.3.1",
-        "eslint-plugin-import": ">= 2.0.0",
-        "eslint-plugin-jsx-a11y": "^6.4.1"
+        "@typescript-eslint/eslint-plugin": ">=8",
+        "@typescript-eslint/parser": ">=8",
+        "@babel/eslint-parser": ">=7.25",
+        "eslint": ">=9.8.0",
+        "eslint-plugin-prettier": ">=5.2.1",
+        "eslint-plugin-import": ">= 2.29.1",
+        "eslint-plugin-jsx-a11y": ">=6.9.0"
     },
     "devDependencies": {
-        "prettier": "^2.2.1"
+        "prettier": ">=3.3.3"
     }
 }

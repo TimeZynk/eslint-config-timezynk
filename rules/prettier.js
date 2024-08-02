@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     rules: {
         indent: 0, // Let prettier handle indent
         'react/jsx-indent-props': 0, // Let prettier handle indent
