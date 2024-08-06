@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     extends: ['../index.js'],
     plugins: ['@typescript-eslint/eslint-plugin'],
     rules: {
@@ -28,12 +28,12 @@ module.exports = {
         '@typescript-eslint/prefer-namespace-keyword': 2,
         '@typescript-eslint/triple-slash-reference': 2,
     },
-    "overrides": [
+    overrides: [
         {
-            "files": ["*.ts", "*.tsx"],
-            "rules": {
-                "@typescript-eslint/explicit-module-boundary-types": 1,
-            }
-        }
-    ]
+            files: ['*.ts', '*.tsx'],
+            rules: {
+                '@typescript-eslint/explicit-module-boundary-types': 1,
+            },
+        },
+    ],
 };
