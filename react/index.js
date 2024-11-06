@@ -1,5 +1,5 @@
 export default {
-    extends: ['../typeScript/index.js', './rules/jsx-a11y.js', './rules/jsx.js', './rules/hooks.js'],
+    extends: ['./rules/jsx-a11y.js', './rules/jsx.js', './rules/hooks.js'],
     env: {
         browser: true,
         node: true, // Add `node: true` if you need Node.js environment settings
