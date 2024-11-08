@@ -1,5 +1,5 @@
-module.exports = {
-    extends: ['eslint:recommended', require.resolve('./rules/import'), require.resolve('./rules/prettier')],
+export default {
+    extends: ['eslint:recommended', './rules/import.js', './rules/prettier.js'],
     plugins: ['import', 'babel', 'prettier'],
     env: {
         node: true,
@@ -15,7 +15,7 @@ module.exports = {
         propWrapperFunctions: ['forbidExtraProps', 'exact', 'Object.freeze'],
     },
     parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 2024,
         sourceType: 'module',
         ecmaFeatures: {
             jsx: true,
@@ -26,21 +26,21 @@ module.exports = {
     rules: {
         'array-bracket-spacing': [1, 'never'],
         'array-callback-return': [1, { allowImplicit: true, checkForEach: false }],
-        'arrow-body-style': 0,
+        'arrow-body-style': 'off',
         'arrow-parens': [1, 'always'],
 
         'block-scoped-var': 1,
         'block-spacing': [1, 'always'],
         'brace-style': [1, '1tbs', { allowSingleLine: true }],
 
-        camelcase: 0,
-        'class-methods-use-this': 0,
+        camelcase: 'off',
+        'class-methods-use-this': 'off',
         'consistent-return': 1,
         'default-case': [1, { commentPattern: '^no default$' }],
         'dot-notation': [1, { allowPattern: '^[a-z]+(_[a-z]+)+$' }],
         'eol-last': [1, 'always'],
         'func-names': 1,
-        'global-require': 0,
+        'global-require': 'off',
         'guard-for-in': 1,
         'jsx-quotes': [1, 'prefer-double'],
         'key-spacing': [1, { beforeColon: false, afterColon: true }],
@@ -63,8 +63,8 @@ module.exports = {
             },
         ],
         'lines-between-class-members': [1, 'always', { exceptAfterSingleLine: false }],
-        'max-len': 0,
-        'max-classes-per-file': 0,
+        'max-len': 'off',
+        'max-classes-per-file': 'off',
         'new-cap': [
             1,
             {
@@ -76,7 +76,7 @@ module.exports = {
             },
         ],
         'new-parens': 1,
-        'newline-per-chained-call': 0,
+        'newline-per-chained-call': 'off',
         'no-bitwise': 1,
         'no-cond-assign': [1, 'always'],
         'no-confusing-arrow': [1, { allowParens: true }],
@@ -158,9 +158,9 @@ module.exports = {
         'no-throw-literal': 1,
         'no-trailing-spaces': [1, { skipBlankLines: false, ignoreComments: false }],
         'no-undef': 2,
-        'no-underscore-dangle': 0,
+        'no-underscore-dangle': 'off',
         'no-unneeded-ternary': [1, { defaultAssignment: false }],
-        'no-unused-expressions': 0,
+        'no-unused-expressions': 'off',
         'no-unused-vars': 1,
         'no-use-before-define': [1, { functions: true, classes: true, variables: true }],
         'no-useless-concat': 1,
@@ -189,7 +189,7 @@ module.exports = {
         'one-var': [1, 'never'],
         'one-var-declaration-per-line': [1, 'always'],
         'operator-assignment': [1, 'always'],
-        'operator-linebreak': 0,
+        'operator-linebreak': 'off',
         'padded-blocks': [1, { blocks: 'never', classes: 'never', switches: 'never' }, { allowSingleLineBlocks: true }],
         'prefer-arrow-callback': [1, { allowNamedFunctions: true, allowUnboundThis: true }],
         'prefer-const': [1, { destructuring: 'any', ignoreReadBeforeAssign: true }],
@@ -232,7 +232,7 @@ module.exports = {
             },
         ],
         strict: [1, 'never'],
-        'switch-colon-spacing': 0,
+        'switch-colon-spacing': 'off',
         'vars-on-top': 1,
         'valid-typeof': [2, { requireStringLiterals: true }],
         'wrap-iife': 1,

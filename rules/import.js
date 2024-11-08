@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     rules: {
         'import/extensions': 0,
         'import/first': 1,
@@ -11,7 +11,7 @@ module.exports = {
         'import/no-named-as-default': 1,
         'import/no-named-default': 1,
         'import/no-unresolved': 0,
-        'import/no-useless-path-segments': [1, { commonjs: true }],
+        'import/no-useless-path-segments': [1],
         'import/order': [
             1,
             {

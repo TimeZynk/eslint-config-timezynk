@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     rules: {
         'react/jsx-boolean-value': [1, 'never', { always: [] }],
         'react/jsx-closing-bracket-location': [1, 'line-aligned'],

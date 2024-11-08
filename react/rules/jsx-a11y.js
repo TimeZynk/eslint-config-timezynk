@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     rules: {
         'jsx-a11y/alt-text': [
             1,
